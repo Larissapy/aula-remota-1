@@ -1,8 +1,14 @@
-h = int(input('Digite a hora'))
-m = int(input('Os minutos'))
-s = int(input('E os segundos'))
+def segundos(h,m,s):
+    return ((h * 60) + m) * 60 + s
 
-segundos = ((h * 60) + m ) * 60
-resultado = segundos + s
+def main():
+    hora = int(input('Digite a hora: '))
+    minuto = int(input('Os minutos: '))
+    segundo = int(input('E os segundos: '))
 
-print(f'Já se passaram {resultado} segundos desde a meia noite')
+    resultado = segundos(hora,minuto,segundo)
+
+    print(f'Já se passaram {resultado} segundos desde a meia noite')
+
+if __name__ == "__main__":
+    main()

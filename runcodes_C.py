@@ -2,11 +2,11 @@ def potencia(n):
     return n**3
 
 def main():
-    num = int(input('Informe o número:'))
+    num = int(input())
 
     resultado = potencia(num)
     
-    print(f'Seu resultado é: {resultado}')
+    print(f'{resultado}')
 
 if __name__ == "__main__":
     main()

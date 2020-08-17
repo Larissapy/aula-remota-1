@@ -6,17 +6,17 @@ def volume(l,c,a):
     return l * c * a
 
 def main():
-    altura = int(input('Imforme a altura: '))
-    comprimento = int(input('Agora o comprimento: '))
-    largura = int(input('E a lagura: '))
+    altura = int(input())
+    comprimento= int(input())
+    largura = int(input())
 
     area_pi = area_piso(largura,comprimento)
     volume_sala = volume(largura,comprimento,altura)
     area_pa = area_parede(largura,comprimento,altura)
 
-    print(f'Área do piso da sala: {area_pi}m²')
-    print(f' Volume da sala: {volume_sala}m³')
-    print(f' Área das paredes da sala: {area_pa}m²')
+    print(f'{area_pi}')
+    print(f'{volume_sala}')
+    print(f'{area_pa}')
 
 if __name__ == "__main__":
     main()
